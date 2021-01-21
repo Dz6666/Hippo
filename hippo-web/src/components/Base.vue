@@ -5,7 +5,7 @@
     <a-layout id="components-layout-demo-custom-trigger">
       <a-layout-sider v-model="collapsed" :trigger="null" collapsible style="min-height: 700px;">
         <div class="logo" style="text-align: center;font-size: 20px;color:#fff;">
-          Hippo
+          Top运维
         </div>
         <a-menu
           :default-selected-keys="['1']"
