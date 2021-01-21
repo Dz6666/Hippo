@@ -6,9 +6,12 @@ import Router from 'vue-router'   // ./router是一个包名称。都在node_mod
 import ShowCenter from '@/components/ShowCenter'
 
 import Login from '@/components/Login'
+import Base from '@/components/Base'
+import Hosts from '@/components/Hosts'
 
 // 想要使用功能必须use一下。才可以使用路由的功能
 Vue.use(Router);
+
 export default new Router({
   mode:'history',
   routes: [
@@ -19,9 +22,30 @@ export default new Router({
     },
     {
       path: '/hippo',
-      name: 'ShowCenter',
-      component: ShowCenter
-    },
-  ],
-})
+      // name: 'hippo',
+      component: Base,
+      
+      // 路由嵌套
+      children:[
+        {
+          // 当 /user/:id/profile 匹配成功，
+          // UserProfile 会被渲染在 User 的 <router-view> 中
+          path: '',  // 访问/hippo路径时显示的组件内容
+          component: ShowCenter
+        },
+        {
+          path: 'showcenter/',
+          component: ShowCenter
+        },
+        {
+          path: 'host/',
+          component: Hosts
+        },
+      ]
 
+    },
+
+
+  ],
+
+})
