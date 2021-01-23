@@ -1,0 +1,31 @@
+INFO 2021-01-23 11:11:51,816 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-01-23 11:11:58,447 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-01-23 11:19:03,881 autoreload 203 C:\Users\daizhe\Desktop\Hippo\Hippo\hippo_api\hippo_api\settings\dev.py changed, reloading.
+INFO 2021-01-23 11:19:05,362 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-01-23 11:19:14,644 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-01-23 11:19:17,075 basehttp 154 "GET / HTTP/1.1" 200 16348
+INFO 2021-01-23 12:49:12,197 autoreload 203 C:\Users\daizhe\Desktop\Hippo\Hippo\hippo_api\hippo_api\settings\dev.py changed, reloading.
+INFO 2021-01-23 12:49:13,068 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-01-23 12:49:46,735 autoreload 203 C:\Users\daizhe\Desktop\Hippo\Hippo\hippo_api\hippo_api\settings\dev.py changed, reloading.
+INFO 2021-01-23 12:49:47,519 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-01-23 12:52:19,454 autoreload 203 C:\Users\daizhe\Desktop\Hippo\Hippo\hippo_api\hippo_api\settings\dev.py changed, reloading.
+INFO 2021-01-23 12:52:20,237 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-01-23 12:58:12,972 autoreload 203 C:\Users\daizhe\Desktop\Hippo\Hippo\hippo_api\hippo_api\settings\dev.py changed, reloading.
+INFO 2021-01-23 12:58:13,806 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-01-23 12:58:34,933 autoreload 203 C:\Users\daizhe\Desktop\Hippo\Hippo\hippo_api\hippo_api\settings\dev.py changed, reloading.
+INFO 2021-01-23 12:58:35,830 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-01-23 13:03:25,147 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-01-23 13:10:29,776 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-01-23 13:10:49,988 basehttp 154 "GET / HTTP/1.1" 200 16348
+INFO 2021-01-23 13:10:50,031 basehttp 154 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2021-01-23 13:10:50,097 basehttp 154 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO 2021-01-23 13:10:50,098 basehttp 154 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO 2021-01-23 13:10:50,099 basehttp 154 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+WARNING 2021-01-23 13:10:50,142 log 228 Not Found: /favicon.ico
+WARNING 2021-01-23 13:10:50,143 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 1981
+INFO 2021-01-23 13:22:25,634 autoreload 203 C:\Users\daizhe\Desktop\Hippo\Hippo\hippo_api\hippo_api\settings\dev.py changed, reloading.
+INFO 2021-01-23 13:22:26,589 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-01-23 13:22:32,167 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-01-23 13:22:54,247 autoreload 203 C:\Users\daizhe\Desktop\Hippo\Hippo\hippo_api\hippo_api\settings\dev.py changed, reloading.
+INFO 2021-01-23 13:22:55,079 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-01-23 13:26:49,717 autoreload 578 Watching for file changes with StatReloader
