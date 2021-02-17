@@ -17,7 +17,7 @@
 
           <div class="rember">
             <p>
-              <input type="checkbox" class="no" name="a"/>
+              <input v-model="remember_me" type="checkbox" class="no" name="a"/>
               <span>记住密码</span>
             </p>
 
@@ -39,18 +39,34 @@ export default {
       login_type: 0,
       username:"",
       password:"",
+      remember_me: false,
     }
   },
 
   methods:{
     login(){
-      this.$axios.post(`${this.$settings.HOST}/users/login/`,{
-
+      this.$axios.post(`${this.$settings.HOST}/user/login/`,{
+        username: this.username,
+        password: this.password,
       }).then((res)=>{
+        console.log(res);
+        // locatStorage或者sessionStorage中存储token ,点击记住我就存储在 locatStorage
+        if (this.remember_me){
+          localStorage.token = res.data.token;
+          sessionStorage.removeItem( 'token' );
+        }else {
+          sessionStorage.token = res.data.token;
+          localStorage.removeItem('token');
+        }
 
-        // locatStorage或者sessionStorage中存储token
         // 跳转到首页
+        this.$router.push('/hippo/showcenter/');
+
         // 首页加载时验证token有效性
+
+
+      }).catch((error)=>{ // 4xx, 5xx
+        this.$message.error( '用户名或密码有误');
 
       })
     },

@@ -215,5 +215,6 @@ REST_FRAMEWORK = {
 }
 import datetime
 JWT_AUTH = {
-               'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1),  # // 指明token的有效时长1天
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1),  # // 指明token的有效时长1天
+    'JWT_ALLOW_REFRESH': True,  #这个参数要改True，才能刷新token
 }
