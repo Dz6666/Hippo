@@ -29,3 +29,967 @@ INFO 2021-01-23 13:22:32,167 autoreload 578 Watching for file changes with StatR
 INFO 2021-01-23 13:22:54,247 autoreload 203 C:\Users\daizhe\Desktop\Hippo\Hippo\hippo_api\hippo_api\settings\dev.py changed, reloading.
 INFO 2021-01-23 13:22:55,079 autoreload 578 Watching for file changes with StatReloader
 INFO 2021-01-23 13:26:49,717 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-02-17 11:54:54,873 autoreload 578 Watching for file changes with StatReloader
+WARNING 2021-02-17 11:58:14,806 log 228 Not Found: /sockjs-node/info
+WARNING 2021-02-17 11:58:14,806 basehttp 154 "GET /sockjs-node/info?t=1613534294741 HTTP/1.1" 404 2012
+INFO 2021-02-17 12:19:47,594 autoreload 578 Watching for file changes with StatReloader
+ERROR 2021-02-17 12:20:13,841 exception 77 Invalid HTTP_HOST header: '127.0.0.1:8080'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2021-02-17 12:20:13,883 log 228 Bad Request: /admin/
+WARNING 2021-02-17 12:20:13,884 basehttp 154 "GET /admin/ HTTP/1.1" 400 68194
+ERROR 2021-02-17 12:20:14,120 exception 77 Invalid HTTP_HOST header: '127.0.0.1:8080'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2021-02-17 12:20:14,151 log 228 Bad Request: /favicon.ico
+WARNING 2021-02-17 12:20:14,152 basehttp 154 "GET /favicon.ico HTTP/1.1" 400 68061
+INFO 2021-02-17 12:20:48,130 autoreload 203 C:\Users\daizhe\Desktop\Hippo自动化运维\Hippo\hippo_api\hippo_api\settings\dev.py changed, reloading.
+INFO 2021-02-17 12:20:49,096 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-02-17 12:20:50,973 basehttp 154 "GET /admin/ HTTP/1.1" 302 0
+INFO 2021-02-17 12:20:51,014 basehttp 154 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1819
+INFO 2021-02-17 12:20:51,050 basehttp 154 "GET /static/admin/css/login.css HTTP/1.1" 200 1233
+INFO 2021-02-17 12:20:51,051 basehttp 154 "GET /static/admin/css/base.css HTTP/1.1" 200 16378
+INFO 2021-02-17 12:20:51,051 basehttp 154 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17944
+INFO 2021-02-17 12:20:51,062 basehttp 154 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2021-02-17 12:20:51,096 basehttp 154 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO 2021-02-17 12:20:51,097 basehttp 154 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+WARNING 2021-02-17 12:20:51,119 log 228 Not Found: /favicon.ico
+WARNING 2021-02-17 12:20:51,120 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 1975
+ERROR 2021-02-17 12:20:58,421 log 228 Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\mysql\base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\MySQLdb\cursors.py", line 209, in execute
+    res = self._query(query)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\MySQLdb\cursors.py", line 315, in _query
+    db.query(q)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\MySQLdb\connections.py", line 239, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'hippo.auth_user' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\admin\sites.py", line 399, in login
+    return LoginView.as_view(**defaults)(request)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\decorators\debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\auth\views.py", line 61, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\generic\base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\generic\edit.py", line 141, in post
+    if form.is_valid():
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\forms\forms.py", line 185, in is_valid
+    return self.is_bound and not self.errors
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\forms\forms.py", line 180, in errors
+    self.full_clean()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\forms\forms.py", line 382, in full_clean
+    self._clean_form()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\forms\forms.py", line 409, in _clean_form
+    cleaned_data = self.clean()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\auth\forms.py", line 196, in clean
+    self.user_cache = authenticate(self.request, username=username, password=password)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\auth\__init__.py", line 73, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\auth\backends.py", line 20, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\auth\base_user.py", line 44, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 402, in get
+    num = len(clone)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 256, in __len__
+    self._fetch_all()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 1242, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 55, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\compiler.py", line 1097, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 99, in execute
+    return super().execute(sql, params)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 76, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\mysql\base.py", line 71, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\MySQLdb\cursors.py", line 209, in execute
+    res = self._query(query)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\MySQLdb\cursors.py", line 315, in _query
+    db.query(q)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\MySQLdb\connections.py", line 239, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'hippo.auth_user' doesn't exist")
+ERROR 2021-02-17 12:20:58,431 basehttp 154 "POST /admin/login/?next=/admin/ HTTP/1.1" 500 254269
+INFO 2021-02-17 12:21:16,378 basehttp 154 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1819
+INFO 2021-02-17 12:22:04,215 autoreload 203 C:\Users\daizhe\Desktop\Hippo自动化运维\Hippo\hippo_api\hippo_api\apps\user\models.py changed, reloading.
+INFO 2021-02-17 12:22:05,210 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-02-17 12:22:53,357 autoreload 203 C:\Users\daizhe\Desktop\Hippo自动化运维\Hippo\hippo_api\hippo_api\settings\dev.py changed, reloading.
+INFO 2021-02-17 12:22:54,480 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-02-17 12:23:41,168 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-02-17 12:23:43,307 basehttp 154 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1819
+INFO 2021-02-17 12:25:03,564 autoreload 203 C:\Users\daizhe\Desktop\Hippo自动化运维\Hippo\hippo_api\hippo_api\apps\user\models.py changed, reloading.
+INFO 2021-02-17 12:25:04,864 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-02-17 12:27:12,093 autoreload 203 C:\Users\daizhe\Desktop\Hippo自动化运维\Hippo\hippo_api\hippo_api\apps\user\models.py changed, reloading.
+INFO 2021-02-17 12:27:13,573 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-02-17 12:27:35,058 autoreload 203 C:\Users\daizhe\Desktop\Hippo自动化运维\Hippo\hippo_api\hippo_api\settings\dev.py changed, reloading.
+INFO 2021-02-17 12:27:36,474 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-02-17 12:28:14,576 autoreload 203 C:\Users\daizhe\Desktop\Hippo自动化运维\Hippo\hippo_api\hippo_api\urls.py changed, reloading.
+INFO 2021-02-17 12:28:15,735 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-02-17 12:28:31,396 autoreload 578 Watching for file changes with StatReloader
+WARNING 2021-02-17 12:28:34,528 log 228 Not Found: /admin/login/
+WARNING 2021-02-17 12:28:34,529 basehttp 154 "GET /admin/login/?next=/admin/ HTTP/1.1" 404 1992
+INFO 2021-02-17 12:28:44,690 basehttp 154 "GET /xadmin HTTP/1.1" 301 0
+INFO 2021-02-17 12:28:44,750 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 4151
+INFO 2021-02-17 12:28:44,787 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+INFO 2021-02-17 12:28:44,788 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+INFO 2021-02-17 12:28:44,788 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8376
+INFO 2021-02-17 12:28:44,788 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+INFO 2021-02-17 12:28:44,789 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 21658
+INFO 2021-02-17 12:28:44,793 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+INFO 2021-02-17 12:28:44,807 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+INFO 2021-02-17 12:28:44,812 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+INFO 2021-02-17 12:28:44,814 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+INFO 2021-02-17 12:28:44,825 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4158
+INFO 2021-02-17 12:28:44,825 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+INFO 2021-02-17 12:28:44,829 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4165
+INFO 2021-02-17 12:28:44,829 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+INFO 2021-02-17 12:28:44,829 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+INFO 2021-02-17 12:28:44,830 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+INFO 2021-02-17 12:28:44,898 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 200 44432
+INFO 2021-02-17 12:28:51,229 basehttp 154 "POST /xadmin/ HTTP/1.1" 302 0
+INFO 2021-02-17 12:28:51,745 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 10168
+INFO 2021-02-17 12:28:51,771 basehttp 154 "GET /static/xadmin/css/xadmin.page.dashboard.css HTTP/1.1" 200 790
+INFO 2021-02-17 12:28:51,772 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 200 1000
+INFO 2021-02-17 12:28:51,773 basehttp 154 "GET /static/xadmin/js/xadmin.page.dashboard.js HTTP/1.1" 200 3208
+INFO 2021-02-17 12:28:52,196 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-02-17 12:28:57,520 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 10168
+INFO 2021-02-17 12:28:57,860 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-02-17 12:34:57,630 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 10168
+INFO 2021-02-17 12:34:57,917 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-02-17 12:35:00,235 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 10168
+INFO 2021-02-17 12:35:00,531 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-02-17 12:35:05,638 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 10168
+INFO 2021-02-17 12:35:05,927 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-02-17 12:35:10,562 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 10168
+INFO 2021-02-17 12:35:10,858 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-02-17 12:35:12,480 basehttp 154 "GET /xadmin/reversion/revision/ HTTP/1.1" 200 24743
+INFO 2021-02-17 12:35:12,555 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3763
+INFO 2021-02-17 12:35:12,555 basehttp 154 "GET /static/xadmin/vendor/bootstrap-datepicker/css/datepicker.css HTTP/1.1" 200 10225
+INFO 2021-02-17 12:35:12,556 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.css HTTP/1.1" 200 8425
+INFO 2021-02-17 12:35:12,558 basehttp 154 "GET /static/xadmin/vendor/select2/select2.css HTTP/1.1" 200 19226
+INFO 2021-02-17 12:35:12,562 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.bootstrap3.css HTTP/1.1" 200 10602
+INFO 2021-02-17 12:35:12,564 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 200 2319
+INFO 2021-02-17 12:35:12,570 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 200 529
+INFO 2021-02-17 12:35:12,571 basehttp 154 "GET /static/xadmin/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js HTTP/1.1" 200 32656
+INFO 2021-02-17 12:35:12,574 basehttp 154 "GET /static/xadmin/vendor/selectize/selectize.js HTTP/1.1" 200 98602
+INFO 2021-02-17 12:35:12,574 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 200 1990
+INFO 2021-02-17 12:35:12,577 basehttp 154 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 200 1105
+INFO 2021-02-17 12:35:12,581 basehttp 154 "GET /static/xadmin/js/xadmin.widget.datetime.js HTTP/1.1" 200 2979
+INFO 2021-02-17 12:35:12,584 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+INFO 2021-02-17 12:35:12,585 basehttp 154 "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 200 694
+INFO 2021-02-17 12:35:12,585 basehttp 154 "GET /static/xadmin/vendor/select2/select2.js HTTP/1.1" 200 104906
+INFO 2021-02-17 12:35:12,585 basehttp 154 "GET /static/xadmin/js/xadmin.widget.select.js HTTP/1.1" 200 1344
+INFO 2021-02-17 12:35:12,851 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-02-17 12:35:18,956 basehttp 154 "GET /xadmin/user/user/ HTTP/1.1" 200 29938
+INFO 2021-02-17 12:35:19,016 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 200 4198
+INFO 2021-02-17 12:35:19,292 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-02-17 12:35:23,144 basehttp 154 "GET /xadmin/auth/group/ HTTP/1.1" 200 19389
+INFO 2021-02-17 12:35:23,454 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-02-17 12:35:26,759 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 10168
+INFO 2021-02-17 12:35:27,098 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-02-17 12:35:51,235 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-02-17 12:36:08,137 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 13149
+INFO 2021-02-17 12:36:08,181 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 200 3489
+INFO 2021-02-17 12:36:08,182 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 200 31918
+INFO 2021-02-17 12:36:08,503 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+ERROR 2021-02-17 12:36:13,893 log 228 Internal Server Error: /xadmin/host/host/
+Traceback (most recent call last):
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\options.py", line 565, in get_field
+    return self.fields_map[field_name]
+KeyError: 'btitle'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\admin\utils.py", line 316, in label_for_field
+    field = _get_non_gfk_field(model._meta, name)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\admin\utils.py", line 293, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\options.py", line 567, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: Host has no field named 'btitle'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 405, in get
+    context = self.get_context()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 384, in get_context
+    'result_headers': self.result_headers(),
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 524, in result_headers
+    field_name, row) for field_name in self.list_display]
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 524, in <listcomp>
+    field_name, row) for field_name in self.list_display]
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 441, in result_header
+    return_attr=True
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\admin\utils.py", line 341, in label_for_field
+    raise AttributeError(message)
+AttributeError: Unable to lookup 'btitle' on Host or hosthostAdminListAdminViewModelAdminViewGlobalSettingsCommAdminViewBaseSettingBaseAdminViewBaseAdminObjectViewobject
+ERROR 2021-02-17 12:36:13,901 basehttp 154 "GET /xadmin/host/host/ HTTP/1.1" 500 251251
+INFO 2021-02-17 12:36:17,373 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 13149
+INFO 2021-02-17 12:37:31,581 autoreload 578 Watching for file changes with StatReloader
+ERROR 2021-02-17 12:37:53,801 log 228 Internal Server Error: /xadmin/host/host/
+Traceback (most recent call last):
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\options.py", line 565, in get_field
+    return self.fields_map[field_name]
+KeyError: 'btitle'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\admin\utils.py", line 316, in label_for_field
+    field = _get_non_gfk_field(model._meta, name)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\admin\utils.py", line 293, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\options.py", line 567, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: Host has no field named 'btitle'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 405, in get
+    context = self.get_context()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 384, in get_context
+    'result_headers': self.result_headers(),
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 524, in result_headers
+    field_name, row) for field_name in self.list_display]
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 524, in <listcomp>
+    field_name, row) for field_name in self.list_display]
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 441, in result_header
+    return_attr=True
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\admin\utils.py", line 341, in label_for_field
+    raise AttributeError(message)
+AttributeError: Unable to lookup 'btitle' on Host or hosthostAdminListAdminViewModelAdminViewGlobalSettingsCommAdminViewBaseSettingBaseAdminViewBaseAdminObjectViewobject
+ERROR 2021-02-17 12:37:53,806 basehttp 154 "GET /xadmin/host/host/ HTTP/1.1" 500 251251
+INFO 2021-02-17 12:37:57,973 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 13162
+ERROR 2021-02-17 12:37:57,974 basehttp 154 "GET /xadmin/ HTTP/1.1" 500 59
+INFO 2021-02-17 12:37:58,204 basehttp 154 "GET /xadmin/auth/group/ HTTP/1.1" 200 22383
+INFO 2021-02-17 12:37:58,503 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 13162
+ERROR 2021-02-17 12:37:58,504 basehttp 154 "GET /xadmin/ HTTP/1.1" 500 59
+INFO 2021-02-17 12:38:44,445 autoreload 203 C:\Users\daizhe\Desktop\Hippo自动化运维\Hippo\hippo_api\hippo_api\apps\host\__init__.py changed, reloading.
+INFO 2021-02-17 12:38:45,596 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-02-17 12:38:58,592 basehttp 154 "GET /xadmin/auth/group/ HTTP/1.1" 200 22391
+INFO 2021-02-17 12:38:58,919 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+ERROR 2021-02-17 12:39:07,896 log 228 Internal Server Error: /xadmin/host/host/
+Traceback (most recent call last):
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\options.py", line 565, in get_field
+    return self.fields_map[field_name]
+KeyError: 'btitle'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\admin\utils.py", line 316, in label_for_field
+    field = _get_non_gfk_field(model._meta, name)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\admin\utils.py", line 293, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\options.py", line 567, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: Host has no field named 'btitle'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 405, in get
+    context = self.get_context()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 384, in get_context
+    'result_headers': self.result_headers(),
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 524, in result_headers
+    field_name, row) for field_name in self.list_display]
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 524, in <listcomp>
+    field_name, row) for field_name in self.list_display]
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 441, in result_header
+    return_attr=True
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\admin\utils.py", line 341, in label_for_field
+    raise AttributeError(message)
+AttributeError: Unable to lookup 'btitle' on Host or hosthostAdminListAdminViewModelAdminViewGlobalSettingsCommAdminViewBaseSettingBaseAdminViewBaseAdminObjectViewobject
+ERROR 2021-02-17 12:39:07,899 basehttp 154 "GET /xadmin/host/host/ HTTP/1.1" 500 251262
+INFO 2021-02-17 12:39:11,400 basehttp 154 "GET /xadmin/auth/group/ HTTP/1.1" 200 22391
+INFO 2021-02-17 12:40:34,539 basehttp 154 "GET /xadmin/auth/group/ HTTP/1.1" 200 22391
+INFO 2021-02-17 12:40:34,871 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-02-17 12:40:39,551 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-02-17 12:40:46,041 basehttp 154 "GET /xadmin/auth/group/ HTTP/1.1" 200 22391
+INFO 2021-02-17 12:40:46,357 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-02-17 12:41:27,399 autoreload 203 C:\Users\daizhe\Desktop\Hippo自动化运维\Hippo\hippo_api\hippo_api\settings\dev.py changed, reloading.
+INFO 2021-02-17 12:41:28,609 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-02-17 12:42:35,002 autoreload 203 C:\Users\daizhe\Desktop\Hippo自动化运维\Hippo\hippo_api\hippo_api\apps\user\adminx.py changed, reloading.
+INFO 2021-02-17 12:42:36,146 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-02-17 12:42:57,481 basehttp 154 "GET /xadmin/auth/group/ HTTP/1.1" 200 24327
+INFO 2021-02-17 12:42:57,800 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+ERROR 2021-02-17 12:43:13,665 log 228 Internal Server Error: /xadmin/host/host/
+Traceback (most recent call last):
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\options.py", line 565, in get_field
+    return self.fields_map[field_name]
+KeyError: 'btitle'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\admin\utils.py", line 316, in label_for_field
+    field = _get_non_gfk_field(model._meta, name)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\admin\utils.py", line 293, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\options.py", line 567, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: Host has no field named 'btitle'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 405, in get
+    context = self.get_context()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  [Previous line repeated 1 more times]
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  [Previous line repeated 1 more times]
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 384, in get_context
+    'result_headers': self.result_headers(),
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 524, in result_headers
+    field_name, row) for field_name in self.list_display]
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 524, in <listcomp>
+    field_name, row) for field_name in self.list_display]
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 441, in result_header
+    return_attr=True
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\admin\utils.py", line 341, in label_for_field
+    raise AttributeError(message)
+AttributeError: Unable to lookup 'btitle' on Host or hosthostAdminListAdminViewModelAdminViewGlobalSettingsCommAdminViewBaseSettingBaseAdminViewBaseAdminObjectViewobject
+ERROR 2021-02-17 12:43:13,670 basehttp 154 "GET /xadmin/host/host/ HTTP/1.1" 500 263711
+INFO 2021-02-17 12:43:24,754 autoreload 203 C:\Users\daizhe\Desktop\Hippo自动化运维\Hippo\hippo_api\hippo_api\apps\user\adminx.py changed, reloading.
+INFO 2021-02-17 12:43:25,965 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-02-17 12:44:07,792 autoreload 578 Watching for file changes with StatReloader
+ERROR 2021-02-17 12:44:20,088 log 228 Internal Server Error: /xadmin/host/host/
+Traceback (most recent call last):
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\options.py", line 565, in get_field
+    return self.fields_map[field_name]
+KeyError: 'btitle'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\admin\utils.py", line 316, in label_for_field
+    field = _get_non_gfk_field(model._meta, name)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\admin\utils.py", line 293, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\options.py", line 567, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: Host has no field named 'btitle'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 405, in get
+    context = self.get_context()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  [Previous line repeated 1 more times]
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  [Previous line repeated 1 more times]
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 384, in get_context
+    'result_headers': self.result_headers(),
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 524, in result_headers
+    field_name, row) for field_name in self.list_display]
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 524, in <listcomp>
+    field_name, row) for field_name in self.list_display]
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 441, in result_header
+    return_attr=True
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\admin\utils.py", line 341, in label_for_field
+    raise AttributeError(message)
+AttributeError: Unable to lookup 'btitle' on Host or hosthostAdminListAdminViewModelAdminViewGlobalSettingsCommAdminViewBaseSettingBaseAdminViewBaseAdminObjectViewobject
+ERROR 2021-02-17 12:44:20,092 basehttp 154 "GET /xadmin/host/host/ HTTP/1.1" 500 263846
+INFO 2021-02-17 12:44:32,144 basehttp 154 "GET /xadmin/auth/group/ HTTP/1.1" 200 24327
+INFO 2021-02-17 12:44:32,258 basehttp 154 "GET /xadmin/auth/group/ HTTP/1.1" 200 24327
+ERROR 2021-02-17 12:44:32,261 basehttp 154 "GET /xadmin/auth/group/ HTTP/1.1" 500 59
+INFO 2021-02-17 12:44:35,291 basehttp 154 "GET /xadmin/auth/group/ HTTP/1.1" 200 24327
+INFO 2021-02-17 12:44:35,682 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-02-17 12:44:45,925 basehttp 154 "GET /xadmin/auth/permission/ HTTP/1.1" 200 90546
+INFO 2021-02-17 12:44:46,296 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+ERROR 2021-02-17 12:44:48,443 log 228 Internal Server Error: /xadmin/host/host/
+Traceback (most recent call last):
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\options.py", line 565, in get_field
+    return self.fields_map[field_name]
+KeyError: 'btitle'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\admin\utils.py", line 316, in label_for_field
+    field = _get_non_gfk_field(model._meta, name)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\admin\utils.py", line 293, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\options.py", line 567, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: Host has no field named 'btitle'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 405, in get
+    context = self.get_context()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  [Previous line repeated 1 more times]
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  [Previous line repeated 1 more times]
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 384, in get_context
+    'result_headers': self.result_headers(),
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 524, in result_headers
+    field_name, row) for field_name in self.list_display]
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 524, in <listcomp>
+    field_name, row) for field_name in self.list_display]
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 441, in result_header
+    return_attr=True
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\admin\utils.py", line 341, in label_for_field
+    raise AttributeError(message)
+AttributeError: Unable to lookup 'btitle' on Host or hosthostAdminListAdminViewModelAdminViewGlobalSettingsCommAdminViewBaseSettingBaseAdminViewBaseAdminObjectViewobject
+ERROR 2021-02-17 12:44:48,449 basehttp 154 "GET /xadmin/host/host/ HTTP/1.1" 500 263716
+INFO 2021-02-17 12:44:54,302 basehttp 154 "GET /xadmin/auth/permission/ HTTP/1.1" 200 90546
+INFO 2021-02-17 12:55:01,220 basehttp 154 "GET /xadmin/user/user/ HTTP/1.1" 200 34876
+INFO 2021-02-17 12:55:01,520 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-02-17 12:56:24,592 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-02-17 12:57:02,857 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-02-17 12:57:37,858 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-02-17 12:58:54,785 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-02-17 13:00:07,070 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-02-17 13:00:11,837 basehttp 154 "GET /xadmin HTTP/1.1" 301 0
+INFO 2021-02-17 13:00:11,907 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 4354
+INFO 2021-02-17 13:00:11,952 basehttp 154 "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+INFO 2021-02-17 13:00:11,952 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8376
+INFO 2021-02-17 13:00:11,953 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+INFO 2021-02-17 13:00:11,955 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 21658
+INFO 2021-02-17 13:00:11,956 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+INFO 2021-02-17 13:00:11,956 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+INFO 2021-02-17 13:00:11,968 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+INFO 2021-02-17 13:00:11,973 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+INFO 2021-02-17 13:00:11,973 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+INFO 2021-02-17 13:00:11,974 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+INFO 2021-02-17 13:00:11,988 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4165
+INFO 2021-02-17 13:00:11,988 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 4361
+INFO 2021-02-17 13:00:11,989 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+INFO 2021-02-17 13:00:11,991 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+INFO 2021-02-17 13:00:11,992 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 200 31918
+INFO 2021-02-17 13:00:11,993 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+INFO 2021-02-17 13:00:11,995 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 200 3489
+INFO 2021-02-17 13:00:12,069 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 200 44432
+INFO 2021-02-17 13:00:17,785 basehttp 154 "POST /xadmin/ HTTP/1.1" 302 0
+INFO 2021-02-17 13:00:30,753 basehttp 154 "GET /xadmin/ HTTP/1.1" 200 15121
+INFO 2021-02-17 13:00:30,799 basehttp 154 "GET /static/xadmin/css/xadmin.page.dashboard.css HTTP/1.1" 200 790
+INFO 2021-02-17 13:00:30,799 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 200 1000
+INFO 2021-02-17 13:00:30,799 basehttp 154 "GET /static/xadmin/js/xadmin.page.dashboard.js HTTP/1.1" 200 3208
+INFO 2021-02-17 13:00:31,127 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+ERROR 2021-02-17 13:00:37,174 log 228 Internal Server Error: /xadmin/host/host/
+Traceback (most recent call last):
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\options.py", line 565, in get_field
+    return self.fields_map[field_name]
+KeyError: 'btitle'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\admin\utils.py", line 316, in label_for_field
+    field = _get_non_gfk_field(model._meta, name)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\admin\utils.py", line 293, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\options.py", line 567, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: Host has no field named 'btitle'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 405, in get
+    context = self.get_context()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  [Previous line repeated 1 more times]
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  [Previous line repeated 1 more times]
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 384, in get_context
+    'result_headers': self.result_headers(),
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 524, in result_headers
+    field_name, row) for field_name in self.list_display]
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 524, in <listcomp>
+    field_name, row) for field_name in self.list_display]
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\xadmin\views\list.py", line 441, in result_header
+    return_attr=True
+  File "C:\Users\daizhe\AppData\Local\Programs\Python\Python36\lib\site-packages\django\contrib\admin\utils.py", line 341, in label_for_field
+    raise AttributeError(message)
+AttributeError: Unable to lookup 'btitle' on Host or hosthostAdminListAdminViewModelAdminViewGlobalSettingsCommAdminViewBaseSettingBaseAdminViewBaseAdminObjectViewobject
+ERROR 2021-02-17 13:00:37,179 basehttp 154 "GET /xadmin/host/host/ HTTP/1.1" 500 262419
+INFO 2021-02-17 13:01:13,132 autoreload 203 C:\Users\daizhe\Desktop\Hippo自动化运维\Hippo\hippo_api\hippo_api\apps\host\adminx.py changed, reloading.
+INFO 2021-02-17 13:01:14,301 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-02-17 13:01:18,848 basehttp 154 "GET /xadmin/host/host/ HTTP/1.1" 200 24098
+INFO 2021-02-17 13:01:18,967 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3763
+INFO 2021-02-17 13:01:18,968 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 200 2319
+INFO 2021-02-17 13:01:18,968 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 200 529
+INFO 2021-02-17 13:01:18,970 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 200 1990
+INFO 2021-02-17 13:01:18,972 basehttp 154 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 200 1105
+INFO 2021-02-17 13:01:18,977 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+INFO 2021-02-17 13:01:19,254 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-02-17 13:01:21,805 basehttp 154 "GET /xadmin/host/host/ HTTP/1.1" 200 24098
+INFO 2021-02-17 13:01:22,130 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-02-17 13:03:37,038 autoreload 203 C:\Users\daizhe\Desktop\Hippo自动化运维\Hippo\hippo_api\hippo_api\settings\dev.py changed, reloading.
+INFO 2021-02-17 13:03:38,224 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-02-17 13:05:40,137 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-02-17 13:07:57,653 autoreload 578 Watching for file changes with StatReloader
+INFO 2021-02-17 13:08:20,721 basehttp 154 "POST /user/login/ HTTP/1.1" 200 197
+INFO 2021-02-17 13:08:24,450 basehttp 154 "GET /xadmin/host/host/ HTTP/1.1" 200 24098
+INFO 2021-02-17 13:08:24,520 basehttp 154 "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 21658
+INFO 2021-02-17 13:08:24,531 basehttp 154 "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+INFO 2021-02-17 13:08:24,531 basehttp 154 "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8376
+INFO 2021-02-17 13:08:24,539 basehttp 154 "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3763
+INFO 2021-02-17 13:08:24,541 basehttp 154 "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+INFO 2021-02-17 13:08:24,542 basehttp 154 "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+INFO 2021-02-17 13:08:24,543 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+INFO 2021-02-17 13:08:24,544 basehttp 154 "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+INFO 2021-02-17 13:08:24,563 basehttp 154 "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+INFO 2021-02-17 13:08:24,565 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+INFO 2021-02-17 13:08:24,567 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+INFO 2021-02-17 13:08:24,567 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+INFO 2021-02-17 13:08:24,569 basehttp 154 "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+INFO 2021-02-17 13:08:24,580 basehttp 154 "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4165
+INFO 2021-02-17 13:08:24,582 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 200 2319
+INFO 2021-02-17 13:08:24,582 basehttp 154 "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 200 31918
+INFO 2021-02-17 13:08:24,588 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 200 1990
+INFO 2021-02-17 13:08:24,593 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 200 529
+INFO 2021-02-17 13:08:24,601 basehttp 154 "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 200 1105
+INFO 2021-02-17 13:08:24,603 basehttp 154 "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 200 3489
+INFO 2021-02-17 13:08:24,603 basehttp 154 "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+INFO 2021-02-17 13:08:25,333 basehttp 154 "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2021-02-17 13:08:25,388 basehttp 154 "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 200 44432
+WARNING 2021-02-17 13:08:25,439 log 228 Not Found: /favicon.ico
+WARNING 2021-02-17 13:08:25,440 basehttp 154 "GET /favicon.ico HTTP/1.1" 404 2087
+INFO 2021-02-17 13:08:27,853 basehttp 154 "POST /user/login/ HTTP/1.1" 200 197

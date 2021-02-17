@@ -42,8 +42,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'user',
+    'host',
     'corsheaders',
+
+    'xadmin',
+    'crispy_forms',
+    'reversion',
 ]
 
 MIDDLEWARE = [
@@ -118,19 +124,29 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+from django.conf import global_settings
+# AUTH_USER_MODEL = 'auth.User'     #注册自定义用户模型，格式：“应用名.模型类名”    注意：Django建议我们对于AUTH_USER_MODEL参数的设置一定要在第一次数据库迁移之前就设置好，否则后续使用可能出现未知错误。
+AUTH_USER_MODEL = 'user.User'
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+# LANGUAGE_CODE = 'en-us'
+#
+# TIME_ZONE = 'UTC'
 
-TIME_ZONE = 'UTC'
+# 修改使用中文界面
+LANGUAGE_CODE = 'zh-Hans'
+# 修改时区
+TIME_ZONE = 'Asia/Shanghai'
+USE_TZ = False
 
 USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+# USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
@@ -191,4 +207,13 @@ LOGGING = {
 REST_FRAMEWORK = {
     # 异常处理
     'EXCEPTION_HANDLER': 'hippo_api.utils.exceptions.custom_exception_handler',
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+    ),
+}
+import datetime
+JWT_AUTH = {
+               'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1),  # // 指明token的有效时长1天
 }
